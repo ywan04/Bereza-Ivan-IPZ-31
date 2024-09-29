@@ -1,5 +1,6 @@
 :root {
 	--fg-color: #212121;
+	--fg-color-alt: #757575;
 	--active-fg-color: #2196F3;
 	--font: "Roboto", sans-serif
 }
@@ -22,7 +23,7 @@ a {
 }
 
 .contact__mail, .contact__phone-number {
-	color: #757575;
+	color: var(--fg-color-alt);
 }
 
 .site-navigation__link:hover,
@@ -103,7 +104,7 @@ footer, .section--first {
 }
 
 .staff-description__job-title {
-	color: #757575;
+	color: var(--fg-color-alt);
 	font-size: 16px;
 	font-weight: 400;
 	letter-spacing: 3%;
@@ -120,4 +121,42 @@ footer, .section--first {
 
 .info__mail, .info__phone-number {
 	color: rgba(256, 256, 256, 0.6);
+}
+
+.filter-button__button {
+	color: var(--fg-color);
+	background-color: #f5f4fa;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.625;
+	letter-spacing: 3%;
+	text-align: center;
+}
+
+.filter-button__button:hover,
+.filter-button__button:focus,
+.filter-button__button:active {
+	color: #ffffff;
+	background-color: #2196f3;
+}
+
+.card-content {
+	background-color: #ffffff;
+	border-color: #eeeeee;
+	border-width: 1px;
+}
+
+.card-description__title {
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 2;
+	letter-spacing: 6%;
+}
+
+.card-description__content {
+	color: var(--fg-color-alt);
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.875;
+	letter-spacing: 3%;
 }
