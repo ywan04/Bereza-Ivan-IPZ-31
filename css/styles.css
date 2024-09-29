@@ -16,6 +16,10 @@ header {
 	letter-spacing: 2%;
 }
 
+a {
+	text-decoration: none;
+}
+
 .site-navigation__link:hover,
 .site-navigation__link:focus,
 .site-navigation__link:active,
@@ -28,11 +32,12 @@ header {
 	color: var(--active-fg-color);
 }
 
-.section--first {
+footer, .section--first {
 	background-color: #2f303a;
 }
 
 .section--first__title {
+	color: #ffffff;
 	font-size: 44px;
 	font-weight: 900;
 	line-height: 60px;
@@ -51,5 +56,63 @@ header {
 	text-align: center;
 }
 
-.section--second {
+.invisible-header {
+	display: none;
+}
+
+.advantage__title {
+	font-weight: 700;
+	letter-spacing: 3%;
+	text-transform: uppercase;
+}
+
+.advantage__content {
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 3%;
+}
+
+.section-third__title, .section-fourth__title {
+	font-size: 36px;
+	font-weight: 700;
+	letter-spacing: 3%;
+	text-align: center;
+}
+
+.section-fourth {
+	background-color: #f5f4fa;
+}
+
+.staff-card-content {
+	background-color: #ffffff;
+	box-shadow: 0px 2px 1px #000000;
+	box-shadow: 0px 1px 1px #000000;
+	box-shadow: 0px 1px 3px #000000;
+}
+
+.staff-description__name {
+	font-size: 16px;
+	font-weight: 500;
+	letter-spacing: 3%;
+	text-align: center;
+}
+
+.staff-description__job-title {
+	color: #757575;
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: 3%;
+	text-align: center;
+}
+
+.info {
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+	letter-spacing: 3%;
+}
+
+.info__mail, .info__phone-number {
+	color: rgba(256, 256, 256, 0.6);
 }
