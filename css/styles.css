@@ -1,0 +1,55 @@
+:root {
+	--fg-color: #212121;
+	--active-fg-color: #2196F3;
+	--font: "Roboto", sans-serif
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	color: var(--fg-color);
+	font-size: 14px;
+	letter-spacing: normal;
+}
+
+header {
+	font-weight: 500;
+	letter-spacing: 2%;
+}
+
+.site-navigation__link:hover,
+.site-navigation__link:focus,
+.site-navigation__link:active,
+.contact__mail:hover,
+.contact__mail:focus,
+.contact__mail:active,
+.contact__phone-number:hover,
+.contact__phone-number:focus,
+.contact__phone-number:active {
+	color: var(--active-fg-color);
+}
+
+.section--first {
+	background-color: #2f303a;
+}
+
+.section--first__title {
+	font-size: 44px;
+	font-weight: 900;
+	line-height: 60px;
+	letter-spacing: 6%;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.section--first__button {
+	color: #ffffff;
+	background-color: #188ce8;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 30px;
+	letter-spacing: 6%;
+	text-align: center;
+}
+
+.section--second {
+}
