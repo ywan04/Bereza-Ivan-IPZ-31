@@ -21,6 +21,10 @@ a {
 	text-decoration: none;
 }
 
+.contact__mail, .contact__phone-number {
+	color: #757575;
+}
+
 .site-navigation__link:hover,
 .site-navigation__link:focus,
 .site-navigation__link:active,
