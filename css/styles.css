@@ -45,7 +45,7 @@ footer, .section--first {
 	color: #ffffff;
 	font-size: 44px;
 	font-weight: 900;
-	line-height: 60px;
+	line-height: 1.36;
 	letter-spacing: 6%;
 	text-align: center;
 	text-transform: uppercase;
@@ -56,7 +56,7 @@ footer, .section--first {
 	background-color: #188ce8;
 	font-size: 16px;
 	font-weight: 700;
-	line-height: 30px;
+	line-height: 1.875;
 	letter-spacing: 6%;
 	text-align: center;
 }
@@ -73,7 +73,7 @@ footer, .section--first {
 
 .advantage__content {
 	font-weight: 400;
-	line-height: 24px;
+	line-height: 1.714;
 	letter-spacing: 3%;
 }
 
@@ -114,7 +114,7 @@ footer, .section--first {
 	color: #ffffff;
 	font-size: 14px;
 	font-weight: 400;
-	line-height: 16px;
+	line-height: 1.143;
 	letter-spacing: 3%;
 }
 
