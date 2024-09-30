@@ -84,7 +84,7 @@ footer, .section--first {
 	letter-spacing: 0.03em;
 }
 
-.section-third__title, .section-fourth__title {
+.section--third__title, .section--fourth__title {
 	font-size: 36px;
 	font-weight: 700;
 	letter-spacing: 0.03em;
