@@ -17,6 +17,10 @@ header {
 	letter-spacing: 2%;
 }
 
+button {
+	cursor: pointer;
+}
+
 a {
 	color: var(--fg-color);
 	text-decoration: none;
