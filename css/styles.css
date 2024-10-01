@@ -22,12 +22,13 @@ body {
 header {
 	font-weight: 500;
 	letter-spacing: 0.02em;
+}
 
+header .container {
 	height: 80px;
 
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
 }
 
 footer {
@@ -74,14 +75,17 @@ ul {
 	color: var(--active-fg-color);
 }
 
+.logo-link {
+	margin-right: 93px;
+}
+
 footer, .section--first {
 	background-color: #2f303a;
 }
 
-.section--first {
+.section--first .container {
 	height: 600px;
 	gap: 30px;
-
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -123,8 +127,8 @@ footer, .section--first {
 	display: none;
 }
 
-.section--second {
-	margin: 94px 0px;
+.section--second .container {
+	padding: 94px 0px;
 }
 
 .section--second__advantages {
@@ -142,6 +146,7 @@ footer, .section--first {
 	font-weight: 700;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
+	margin-bottom: 10px;
 }
 
 .advantage__content {
@@ -151,8 +156,8 @@ footer, .section--first {
 	letter-spacing: 0.03em;
 }
 
-.section--third {
-	margin: 94px 0px;
+.section--third .container {
+	padding-bottom: 94px;
 }
 
 .section--third__title {
@@ -174,9 +179,11 @@ footer, .section--first {
 }
 
 .section--fourth {
-	height: 648px;
 	background-color: #f5f4fa;
-	margin-top: 94px;
+}
+
+.section--fourth .container {
+	height: 648px;
 }
 
 .section--fourth__title {
@@ -192,8 +199,6 @@ footer, .section--first {
 }
 
 .staff-card-content {
-	height: 368px;
-	width: 270px;
 	margin: 0px;
 	background-color: #ffffff;
 	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
@@ -201,13 +206,15 @@ footer, .section--first {
 	            0px 2px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
+.staff-description {
+	padding: 30px;
+}
+
 .staff-description__name {
 	font-size: 16px;
 	font-weight: 500;
 	letter-spacing: 0.03em;
 	text-align: center;
-
-	margin-top: 30px;
 }
 
 .staff-description__job-title {
@@ -221,7 +228,7 @@ footer, .section--first {
 }
 
 .logo-image-footer {
-	margin-top: 60px;
+	padding-top: 60px;
 }
 
 .info {
@@ -244,8 +251,8 @@ footer, .section--first {
 }
 
 .filter-buttons {
-	margin-top: 94px;
-	margin-bottom: 50px;
+	padding-top: 94px;
+	padding-bottom: 50px;
 	gap: 8px;
 	display: flex;
 	justify-content: center;
@@ -266,18 +273,11 @@ footer, .section--first {
 }
 
 .cards {
-	margin-bottom: 94px;
+	padding-bottom: 94px;
+	gap: 30px;
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-}
-
-.card-content {
-	margin: 30px;
-	width: 370px;
-	height: 404px;
-
-	border: 1px solid #eeeeee
 }
 
 .card-description {
@@ -291,10 +291,14 @@ footer, .section--first {
 	background-color: #2196f3;
 }
 
+.card {
+	width: 370px;
+}
+
 .card-content {
 	background-color: #ffffff;
-	border-color: #eeeeee;
-	border-width: 1px;
+	margin: 0px;
+	border: 1px solid #eeeeee;
 }
 
 .card-description__title {
@@ -322,6 +326,8 @@ footer, .section--first {
 .contacts {
 	display: flex;
 	gap: 30px;
+
+	margin-left: auto;
 }
 
 .navigation-elements {
