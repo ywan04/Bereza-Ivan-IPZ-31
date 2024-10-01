@@ -19,7 +19,6 @@ header {
 	height: 80px;
 
 	display: flex;
-	justify-content: center;
 	align-items: center;
 	justify-content: space-around;
 }
@@ -113,6 +112,20 @@ footer, .section--first {
 	display: none;
 }
 
+.section--second {
+	margin: 94px 0px;
+}
+
+.section--second__advantages {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+}
+
+.advantage {
+	width: 270px;
+}
+
 .advantage__title {
 	font-size: 14px;
 	font-weight: 700;
@@ -121,9 +134,25 @@ footer, .section--first {
 }
 
 .advantage__content {
+	color: var(--fg-color-alt);
 	font-weight: 400;
 	line-height: 1.714;
 	letter-spacing: 0.03em;
+}
+
+.section--third {
+	margin: 94px 0px;
+}
+
+.section--third__title {
+	margin-bottom: 50px;
+}
+
+.image-list {
+	gap: 30px;
+
+	display: flex;
+	justify-content: center;
 }
 
 .section--third__title, .section--fourth__title {
