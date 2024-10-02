@@ -24,15 +24,16 @@ header {
 	letter-spacing: 0.02em;
 }
 
+footer {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
 header .container {
 	height: 80px;
 
 	display: flex;
 	align-items: center;
-}
-
-footer {
-	height: 251px;
 }
 
 button {
@@ -226,10 +227,6 @@ footer, .section--first {
 	text-align: center;
 
 	margin-top: 10px;
-}
-
-.logo-image-footer {
-	padding-top: 60px;
 }
 
 .info {
