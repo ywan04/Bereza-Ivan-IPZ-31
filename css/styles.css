@@ -301,6 +301,10 @@ footer, .section--first {
 	border: 1px solid #eeeeee;
 }
 
+.card-content__image {
+	width: 100%;
+}
+
 .card-description__title {
 	font-size: 18px;
 	font-weight: 700;
