@@ -128,7 +128,8 @@ footer, .section--first {
 }
 
 .section--second .container {
-	padding: 94px 0px;
+	padding-top: 94px;
+	padding-bottom: 94px;
 }
 
 .section--second__advantages {
