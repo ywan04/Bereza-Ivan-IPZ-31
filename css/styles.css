@@ -184,11 +184,11 @@ footer, .section--first {
 }
 
 .section--fourth .container {
-	height: 648px;
+	padding-top: 94px;
+	padding-bottom: 94px;
 }
 
 .section--fourth__title {
-	padding-top: 94px;
 	margin-bottom: 50px;
 }
 
