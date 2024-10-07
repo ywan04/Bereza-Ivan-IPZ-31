@@ -338,6 +338,14 @@ footer, .section--first {
 	margin-left: auto;
 }
 
+.contact {
+	display: flex;
+	gap: 10px;
+}
+
+.contact__icon {
+}
+
 .navigation-elements {
 	display: flex;
 	gap: 93px
