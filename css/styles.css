@@ -344,6 +344,7 @@ footer, .section--first {
 }
 
 .contact__icon {
+	fill: var(--fg-color-alt);
 }
 
 .navigation-elements {
