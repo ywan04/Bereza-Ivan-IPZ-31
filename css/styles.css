@@ -345,6 +345,7 @@ footer, .section--first {
 
 .contact__icon {
 	stroke: var(--fg-color-alt);
+	fill: var(--fg-color-alt);
 }
 
 .navigation-elements {
