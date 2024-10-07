@@ -84,6 +84,10 @@ footer, .section--first {
 	background-color: #2f303a;
 }
 
+.section--first {
+	background-image: url('../images/section--first-bg.jpg');
+}
+
 .section--first .container {
 	height: 600px;
 	gap: 30px;
