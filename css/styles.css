@@ -85,7 +85,9 @@ footer, .section--first {
 }
 
 .section--first {
-	background-image: url('../images/section--first-bg.jpg');
+	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/section--first-bg.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .section--first .container {
