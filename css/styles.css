@@ -67,13 +67,14 @@ ul {
 .site-navigation__link:hover,
 .site-navigation__link:focus,
 .site-navigation__link:active,
-.contact__mail:hover,
-.contact__mail:focus,
-.contact__mail:active,
-.contact__phone-number:hover,
-.contact__phone-number:focus,
-.contact__phone-number:active {
+.contact:hover,
+.contact:focus,
+.contact:active {
 	color: var(--active-fg-color);
+}
+
+.contact__mail, .contact__phone-number, .contact__icon {
+	color: inherit;
 }
 
 .logo-link {
@@ -339,12 +340,9 @@ footer, .section--first {
 }
 
 .contact {
+	color: var(--fg-color-alt);
 	display: flex;
 	gap: 10px;
-}
-
-.contact__icon {
-	fill: var(--active-fg-color);
 }
 
 .navigation-elements {
