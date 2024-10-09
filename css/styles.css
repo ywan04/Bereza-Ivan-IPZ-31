@@ -152,7 +152,7 @@ footer, .section--first {
 
 .advantage__icon-panel {
 	padding: 25px 100px;
-	background-color: #F5F4FA;
+	background-color: #f5f4fa;
 	margin-bottom: 30px;
 	border-radius: 4px;
 }
@@ -187,7 +187,7 @@ footer, .section--first {
 	justify-content: center;
 }
 
-.section--third__title, .section--fourth__title {
+.section--third__title, .section--fourth__title, .section--fifth__title {
 	font-size: 36px;
 	font-weight: 700;
 	letter-spacing: 0.03em;
@@ -362,6 +362,29 @@ footer, .section--first {
 	font-weight: 400;
 	line-height: 1.875;
 	letter-spacing: 0.03em;
+}
+
+.section--fifth {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+
+.clients {
+	display: flex;
+	gap: 30px;
+
+	margin-top: 50px;
+}
+
+.client {
+	color: #afb1b8;
+	padding: 16px 32px;
+	border: 1px solid;
+	border-radius: 4px;
+}
+
+.client:hover {
+	color: var(--active-fg-color);
 }
 
 .site-navigation__links {
