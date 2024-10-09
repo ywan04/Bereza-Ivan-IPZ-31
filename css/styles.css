@@ -150,6 +150,13 @@ footer, .section--first {
 	width: 270px;
 }
 
+.advantage__icon-panel {
+	padding: 25px 100px;
+	background-color: #F5F4FA;
+	margin-bottom: 30px;
+	border-radius: 4px;
+}
+
 .advantage__title {
 	font-size: 14px;
 	font-weight: 700;
@@ -234,6 +241,36 @@ footer, .section--first {
 	text-align: center;
 
 	margin-top: 10px;
+}
+
+.staff-description__social-links {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+
+.staff-description__social-link-content {
+	color: #afb1b8;
+
+	width: 44px;
+	height: 44px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin-top: 16px;
+
+	border-radius: 50%;
+}
+
+.staff-description__social-link-content:hover {
+	background-color: var(--active-fg-color);
+	color: #ffffff;
+}
+
+.staff-description__social-link-icon {
+	color: inherit;
 }
 
 .info {
