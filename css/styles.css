@@ -119,7 +119,7 @@ footer .container {
 
 .section--first__button {
 	color: #ffffff;
-	background-color: #188ce8;
+	background-color: var(--active-fg-color);
 	font-size: 16px;
 	font-weight: 700;
 	line-height: 1.875;
@@ -132,8 +132,7 @@ footer .container {
 }
 
 .section--first__button:hover {
-	color: #188ce8;
-	background-color: #ffffff;
+	background-color: #188ce8;
 }
 
 .invisible-header {
