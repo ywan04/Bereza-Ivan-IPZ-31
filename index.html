@@ -23,8 +23,18 @@
 					</ul>
 				</nav>
 				<ul class="contacts">
-					<li class="contact"><a class="contact__mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-					<li class="contact"><a class="contact__phone-number" href="tel:+380961111111">+38 096 111 11 11</a></li>
+					<li class="contact">
+						<svg class="contact__icon" width=16 height=13>
+							<use href="images/icons.svg#icon-envelope"></use>
+						</svg>
+						<a class="contact__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+					</li>
+					<li class="contact">
+						<svg class="contact__icon" width=10 height=17>
+							<use href="images/icons.svg#icon-smartphone"></use>
+						</svg>
+						<a class="contact__phone-number" href="tel:+380961111111">+38 096 111 11 11</a>
+					</li>
 				</ul>
 			</div>
 		</header>
@@ -33,93 +43,336 @@
 				<div class="container">
 					<h1 class="section--first__title">Ефективні рішення для вашого бізнесу</h1>
 					<button class="section--first__button" type="button">Замовити послугу</button>
-			</section>
 				</div>
-				<section class="section--second">
-					<div class="container">
-						<h2 class="invisible-header">Наші переваги</h2>
-						<ul class="section--second__advantages">
-							<li class="advantage">
-								<h3 class = "advantage__title">УВАГА ДО ДЕТАЛЕЙ</h3>
-								<p class = "advantage__content">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
-							</li>
-							<li class="advantage">
-								<h3 class = "advantage__title">ПУНКТУАЛЬНІСТЬ</h3>
-								<p class = "advantage__content">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
-							</li>
-							<li class="advantage">
-								<h3 class = "advantage__title">ПЛАНУВАННЯ</h3>
-								<p class = "advantage__content">Так само консультація з широким активом значною мірою зумовлює.</p>
-							</li>
-							<li class="advantage">
-								<h3 class = "advantage__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-								<p class = "advantage__content">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
-							</li>
-						</ul>
-					</div>
-				</section>
-				<section class="section--third">
-					<div class="container">
-						<h2 class="section--third__title">Чим ми займаємося</h2>
-						<ul class="image-list">
-							<li class="image-list-item"><img class="image-list-item__image" src="images/mac.jpg" alt="Десктопні додатки" width="370" height="294"></li>
-							<li class="image-list-item"><img class="image-list-item__image" src="images/macbook.jpg" alt="Мобільні додатки" width="370" height="294"></li>
-							<li class="image-list-item"><img class="image-list-item__image" src="images/ipad.jpg" alt="Дизайнерські рішення" width="370" height="294"></li>
-						</ul>
-					</div>
-				</section>
-				<section class="section--fourth">
-					<div class="container">
-						<h2 class="section--fourth__title">Наша команда</h2>
-						<ul class="staff-cards">
-							<li class="staff-card">
-								<figure class="staff-card-content">
-									<img class="staff-card-content__image" src="images/product_designer.jpg" alt="Ігор Дем'яненко" width="270" height="260">
-									<figcaption class="staff-description">
-										<h3 class="staff-description__name">Ігор Дем'яненко</h3>
-										<p class="staff-description__job-title">Product Designer</p>
-									</figcaption>
-								</figure>
-							</li>
-							<li class="staff-card">
-								<figure class="staff-card-content">
-									<img class="staff-card-content__image" src="images/frontend_developer.jpg" alt="Ольга Рєпіна" width="270" height="260">
-									<figcaption class="staff-description">
-										<h3 class="staff-description__name">Ольга Рєпіна</h3>
-										<p class="staff-description__job-title">Frontend Developer</p>
-									</figcaption>
-								</figure>
-							</li>
-							<li class="staff-card">
-								<figure class="staff-card-content">
-									<img class="staff-card-content__image" src="images/marketing.jpg" alt="Микола Тарасов" width="270" height="260">
-									<figcaption class="staff-description">
-										<h3 class="staff-description__name">Микола Тарасов</h3>
-										<p class="staff-description__job-title">Marketing</p>
-									</figcaption>
-								</figure>
-							</li>
-							<li class="staff-card">
-								<figure class="staff-card-content">
-									<img class="staff-card-content__image" src="images/ui_designer.jpg" alt="Михайло Єрмаков" width="270" height="260">
-									<figcaption class="staff-description">
-										<h3 class="staff-description__name">Михайло Єрмаков</h3>
-										<p class="staff-description__job-title">UI Designer</p>
-									</figcaption>
-								</figure>
-							</li>
-						</ul>
-					</div>
-				</section>
+			</section>
+			<section class="section--second">
+				<div class="container">
+					<h2 class="invisible-header">Наші переваги</h2>
+					<ul class="section--second__advantages">
+						<li class="advantage">
+							<div class="advantage__icon-panel">
+								<svg class="advatage__icon" width=75 height=75>
+									<use href="images/icons.svg#icon-antenna">
+									</use>
+								</svg>
+							</div>
+							<h3 class = "advantage__title">УВАГА ДО ДЕТАЛЕЙ</h3>
+							<p class = "advantage__content">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+						</li>
+						<li class="advantage">
+							<div class="advantage__icon-panel">
+								<svg class="advatage__icon" width=75 height=75>
+									<use href="images/icons.svg#icon-clock">
+									</use>
+								</svg>
+							</div>
+							<h3 class = "advantage__title">ПУНКТУАЛЬНІСТЬ</h3>
+							<p class = "advantage__content">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+						</li>
+						<li class="advantage">
+							<div class="advantage__icon-panel">
+								<svg class="advatage__icon" width=75 height=75>
+									<use href="images/icons.svg#icon-diagram">
+									</use>
+								</svg>
+							</div>
+							<h3 class = "advantage__title">ПЛАНУВАННЯ</h3>
+							<p class = "advantage__content">Так само консультація з широким активом значною мірою зумовлює.</p>
+						</li>
+						<li class="advantage">
+							<div class="advantage__icon-panel">
+								<svg class="advatage__icon" width=75 height=75>
+									<use href="images/icons.svg#icon-astronaut">
+									</use>
+								</svg>
+							</div>
+							<h3 class = "advantage__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+							<p class = "advantage__content">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="section--third">
+				<div class="container">
+					<h2 class="section--third__title">Чим ми займаємося</h2>
+					<ul class="image-list">
+						<li class="image-list-item"><img class="image-list-item__image" src="images/mac.jpg" alt="Десктопні додатки" width="370" height="294"></li>
+						<li class="image-list-item"><img class="image-list-item__image" src="images/macbook.jpg" alt="Мобільні додатки" width="370" height="294"></li>
+						<li class="image-list-item"><img class="image-list-item__image" src="images/ipad.jpg" alt="Дизайнерські рішення" width="370" height="294"></li>
+					</ul>
+				</div>
+			</section>
+			<section class="section--fourth">
+				<div class="container">
+					<h2 class="section--fourth__title">Наша команда</h2>
+					<ul class="staff-cards">
+						<li class="staff-card">
+							<figure class="staff-card-content">
+								<img class="staff-card-content__image" src="images/product_designer.jpg" alt="Ігор Дем'яненко" width="270" height="260">
+								<figcaption class="staff-description">
+									<h3 class="staff-description__name">Ігор Дем'яненко</h3>
+									<p class="staff-description__job-title">Product Designer</p>
+									<ul class="staff-description__social-links">
+										<li class="staff-description__social-link">
+											<a class="staff-description__social-link-content" href="https://instagram.com">
+												<svg class="staff-description__social-link-icon" width=20 height=20>
+													<use href="images/icons.svg#icon-instagram">
+													</use>
+												</svg>
+											</a>
+										</li>
+										<li class="staff-description__social-link">
+											<a class="staff-description__social-link-content" href="https://twitter.com">
+												<svg class="staff-description__social-link-icon" width=20 height=20>
+													<use href="images/icons.svg#icon-twitter">
+													</use>
+												</svg>
+											</a>
+										</li>
+										<li class="staff-description__social-link">
+											<a class="staff-description__social-link-content" href="https://facebook.com">
+												<svg class="staff-description__social-link-icon" width=20 height=20>
+													<use href="images/icons.svg#icon-facebook">
+													</use>
+												</svg>
+											</a>
+										</li>
+										<li class="staff-description__social-link">
+											<a class="staff-description__social-link-content" href="https://linkedin.com">
+												<svg class="staff-description__social-link-icon" width=20 height=20>
+													<use href="images/icons.svg#icon-linkedin">
+													</use>
+												</svg>
+											</a>
+										</li>
+									</ul>
+								</figcaption>
+							</figure>
+						</li>
+						<li class="staff-card">
+							<figure class="staff-card-content">
+								<img class="staff-card-content__image" src="images/frontend_developer.jpg" alt="Ольга Рєпіна" width="270" height="260">
+								<figcaption class="staff-description">
+									<h3 class="staff-description__name">Ольга Рєпіна</h3>
+									<p class="staff-description__job-title">Frontend Developer</p>
+									<ul class="staff-description__social-links">
+										<li class="staff-description__social-link">
+											<a class="staff-description__social-link-content" href="https://instagram.com">
+												<svg class="staff-description__social-link-icon" width=20 height=20>
+													<use href="images/icons.svg#icon-instagram">
+													</use>
+												</svg>
+											</a>
+										</li>
+										<li class="staff-description__social-link">
+											<a class="staff-description__social-link-content" href="https://twitter.com">
+												<svg class="staff-description__social-link-icon" width=20 height=20>
+													<use href="images/icons.svg#icon-twitter">
+													</use>
+												</svg>
+											</a>
+										</li>
+										<li class="staff-description__social-link">
+											<a class="staff-description__social-link-content" href="https://facebook.com">
+												<svg class="staff-description__social-link-icon" width=20 height=20>
+													<use href="images/icons.svg#icon-facebook">
+													</use>
+												</svg>
+											</a>
+										</li>
+										<li class="staff-description__social-link">
+											<a class="staff-description__social-link-content" href="https://linkedin.com">
+												<svg class="staff-description__social-link-icon" width=20 height=20>
+													<use href="images/icons.svg#icon-linkedin">
+													</use>
+												</svg>
+											</a>
+										</li>
+									</ul>
+								</figcaption>
+							</figure>
+						</li>
+						<li class="staff-card">
+							<figure class="staff-card-content">
+								<img class="staff-card-content__image" src="images/marketing.jpg" alt="Микола Тарасов" width="270" height="260">
+								<figcaption class="staff-description">
+									<h3 class="staff-description__name">Микола Тарасов</h3>
+									<p class="staff-description__job-title">Marketing</p>
+									<ul class="staff-description__social-links">
+										<li class="staff-description__social-link">
+											<a class="staff-description__social-link-content" href="https://instagram.com">
+												<svg class="staff-description__social-link-icon" width=20 height=20>
+													<use href="images/icons.svg#icon-instagram">
+													</use>
+												</svg>
+											</a>
+										</li>
+										<li class="staff-description__social-link">
+											<a class="staff-description__social-link-content" href="https://twitter.com">
+												<svg class="staff-description__social-link-icon" width=20 height=20>
+													<use href="images/icons.svg#icon-twitter">
+													</use>
+												</svg>
+											</a>
+										</li>
+										<li class="staff-description__social-link">
+											<a class="staff-description__social-link-content" href="https://facebook.com">
+												<svg class="staff-description__social-link-icon" width=20 height=20>
+													<use href="images/icons.svg#icon-facebook">
+													</use>
+												</svg>
+											</a>
+										</li>
+										<li class="staff-description__social-link">
+											<a class="staff-description__social-link-content" href="https://linkedin.com">
+												<svg class="staff-description__social-link-icon" width=20 height=20>
+													<use href="images/icons.svg#icon-linkedin">
+													</use>
+												</svg>
+											</a>
+										</li>
+									</ul>
+								</figcaption>
+							</figure>
+						</li>
+						<li class="staff-card">
+							<figure class="staff-card-content">
+								<img class="staff-card-content__image" src="images/ui_designer.jpg" alt="Михайло Єрмаков" width="270" height="260">
+								<figcaption class="staff-description">
+									<h3 class="staff-description__name">Михайло Єрмаков</h3>
+									<p class="staff-description__job-title">UI Designer</p>
+									<ul class="staff-description__social-links">
+										<li class="staff-description__social-link">
+											<a class="staff-description__social-link-content" href="https://instagram.com">
+												<svg class="staff-description__social-link-icon" width=20 height=20>
+													<use href="images/icons.svg#icon-instagram">
+													</use>
+												</svg>
+											</a>
+										</li>
+										<li class="staff-description__social-link">
+											<a class="staff-description__social-link-content" href="https://twitter.com">
+												<svg class="staff-description__social-link-icon" width=20 height=20>
+													<use href="images/icons.svg#icon-twitter">
+													</use>
+												</svg>
+											</a>
+										</li>
+										<li class="staff-description__social-link">
+											<a class="staff-description__social-link-content" href="https://facebook.com">
+												<svg class="staff-description__social-link-icon" width=20 height=20>
+													<use href="images/icons.svg#icon-facebook">
+													</use>
+												</svg>
+											</a>
+										</li>
+										<li class="staff-description__social-link">
+											<a class="staff-description__social-link-content" href="https://linkedin.com">
+												<svg class="staff-description__social-link-icon" width=20 height=20>
+													<use href="images/icons.svg#icon-linkedin">
+													</use>
+												</svg>
+											</a>
+										</li>
+									</ul>
+								</figcaption>
+							</figure>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="section--fifth">
+				<div class="container">
+					<h2 class="section--fifth__title">Постійні клієнти</h2>
+					<ul class="clients">
+						<li class="client">
+							<svg class="client__icon" width=106 height=60>
+								<use href="images/icons.svg#icon-Logo1">
+								</use>
+							</svg>
+						</li>
+						<li class="client">
+							<svg class="client__icon" width=106 height=60>
+								<use href="images/icons.svg#icon-Logo2">
+								</use>
+							</svg>
+						</li>
+						<li class="client">
+							<svg class="client__icon" width=106 height=60>
+								<use href="images/icons.svg#icon-Logo3">
+								</use>
+							</svg>
+						</li>
+						<li class="client">
+							<svg class="client__icon" width=106 height=60>
+								<use href="images/icons.svg#icon-Logo4">
+								</use>
+							</svg>
+						</li>
+						<li class="client">
+							<svg class="client__icon" width=106 height=60>
+								<use href="images/icons.svg#icon-Logo5">
+								</use>
+							</svg>
+						</li>
+						<li class="client">
+							<svg class="client__icon" width=106 height=60>
+								<use href="images/icons.svg#icon-Logo6">
+								</use>
+							</svg>
+						</li>
+					</ul>
+				</div>
+			</section>
 		</main>
 		<footer>
 			<div class="container">
-				<img class="logo-image-footer" src="images/WebStudio_footer.svg" alt="WebStudio">
-				<address class="info">
-					м. Київ, пр-т Лесі Українки, 26
-					<a class="info__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
-					<a class="info__phone-number" href="tel:+380961111111">+38 096 111 11 11</a>
-				</address>
+				<section class="about-footer">
+					<h2 class="invisible-header">Зв'язатись із нами</h2>
+					<img class="logo-image-footer" src="images/WebStudio_footer.svg" alt="WebStudio">
+					<address class="info">
+						м. Київ, пр-т Лесі Українки, 26
+						<a class="info__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+						<a class="info__phone-number" href="tel:+380961111111">+38 096 111 11 11</a>
+					</address>
+				</section>
+				<section class="social-link-footer">
+					<h2 class="social-link-footer__title">ПРИЄДНУЙТЕСЬ</h2>
+					<ul class="social-link-footer__social-links">
+						<li class="social-link-footer__social-link">
+							<a class="social-link-footer__social-link-content" href="https://instagram.com">
+								<svg class="social-link-footer__social-link-icon" width=20 height=20>
+									<use href="images/icons.svg#icon-instagram">
+									</use>
+								</svg>
+							</a>
+						</li>
+						<li class="social-link-footer__social-link">
+							<a class="social-link-footer__social-link-content" href="https://twitter.com">
+								<svg class="social-link-footer__social-link-icon" width=20 height=20>
+									<use href="images/icons.svg#icon-twitter">
+									</use>
+								</svg>
+							</a>
+						</li>
+						<li class="social-link-footer__social-link">
+							<a class="social-link-footer__social-link-content" href="https://facebook.com">
+								<svg class="social-link-footer__social-link-icon" width=20 height=20>
+									<use href="images/icons.svg#icon-facebook">
+									</use>
+								</svg>
+							</a>
+						</li>
+						<li class="social-link-footer__social-link">
+							<a class="social-link-footer__social-link-content" href="https://linkedin.com">
+								<svg class="social-link-footer__social-link-icon" width=20 height=20>
+									<use href="images/icons.svg#icon-linkedin">
+									</use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</footer>
 	</body>

@@ -67,13 +67,14 @@ ul {
 .site-navigation__link:hover,
 .site-navigation__link:focus,
 .site-navigation__link:active,
-.contact__mail:hover,
-.contact__mail:focus,
-.contact__mail:active,
-.contact__phone-number:hover,
-.contact__phone-number:focus,
-.contact__phone-number:active {
+.contact:hover,
+.contact:focus,
+.contact:active {
 	color: var(--active-fg-color);
+}
+
+.contact__mail, .contact__phone-number, .contact__icon {
+	color: inherit;
 }
 
 .logo-link {
@@ -82,6 +83,17 @@ ul {
 
 footer, .section--first {
 	background-color: #2f303a;
+}
+
+footer .container {
+				display: flex;
+				gap: 70px;
+}
+
+.section--first {
+	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/section--first-bg.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .section--first .container {
@@ -107,7 +119,7 @@ footer, .section--first {
 
 .section--first__button {
 	color: #ffffff;
-	background-color: #188ce8;
+	background-color: var(--active-fg-color);
 	font-size: 16px;
 	font-weight: 700;
 	line-height: 1.875;
@@ -120,8 +132,7 @@ footer, .section--first {
 }
 
 .section--first__button:hover {
-	color: #188ce8;
-	background-color: #ffffff;
+	background-color: #188ce8;
 }
 
 .invisible-header {
@@ -143,11 +154,21 @@ footer, .section--first {
 	width: 270px;
 }
 
-.advantage__title {
+.advantage__icon-panel {
+	padding: 25px 100px;
+	background-color: #f5f4fa;
+	margin-bottom: 30px;
+	border-radius: 4px;
+}
+
+.advantage__title, .social-link-footer__title {
 	font-size: 14px;
 	font-weight: 700;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
+}
+
+.advantage__title {
 	margin-bottom: 10px;
 }
 
@@ -173,7 +194,7 @@ footer, .section--first {
 	justify-content: center;
 }
 
-.section--third__title, .section--fourth__title {
+.section--third__title, .section--fourth__title, .section--fifth__title {
 	font-size: 36px;
 	font-weight: 700;
 	letter-spacing: 0.03em;
@@ -203,9 +224,7 @@ footer, .section--first {
 .staff-card-content {
 	margin: 0px;
 	background-color: #ffffff;
-	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
-	            0px 1px 1px 0px rgba(0, 0, 0, 0.14),
-	            0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001f;
 }
 
 .staff-description {
@@ -227,6 +246,26 @@ footer, .section--first {
 	text-align: center;
 
 	margin-top: 10px;
+}
+
+.staff-description__social-links {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+
+.staff-description__social-link-content {
+	color: #afb1b8;
+	margin-top: 16px;
+}
+
+.staff-description__social-link-content:hover {
+	background-color: var(--active-fg-color);
+	color: #ffffff;
+}
+
+.staff-description__social-link-icon {
+	color: inherit;
 }
 
 .info {
@@ -287,6 +326,8 @@ footer, .section--first {
 .filter-button__button:active {
 	color: #ffffff;
 	background-color: #2196f3;
+
+	box-shadow: 0px 2px 2px 0px #0000001f, 0px 1px 2px 0px #00000014, 0px 3px 1px 0px #0000001a;
 }
 
 .card {
@@ -297,6 +338,11 @@ footer, .section--first {
 	background-color: #ffffff;
 	margin: 0px;
 	border: 1px solid #eeeeee;
+}
+
+.card-content:hover {
+	box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000f, 0px 1px 1px 0px #0000001f;
+
 }
 
 .card-content__image {
@@ -320,6 +366,29 @@ footer, .section--first {
 	letter-spacing: 0.03em;
 }
 
+.section--fifth {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+
+.clients {
+	display: flex;
+	gap: 30px;
+
+	margin-top: 50px;
+}
+
+.client {
+	color: #afb1b8;
+	padding: 16px 32px;
+	border: 1px solid;
+	border-radius: 4px;
+}
+
+.client:hover {
+	color: var(--active-fg-color);
+}
+
 .site-navigation__links {
 	display: flex;
 	gap: 30px;
@@ -332,6 +401,13 @@ footer, .section--first {
 	margin-left: auto;
 }
 
+.contact {
+	color: var(--fg-color-alt);
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
 .navigation-elements {
 	display: flex;
 	gap: 93px
@@ -340,4 +416,34 @@ footer, .section--first {
 .navigation-element {
 	display: flex;
 	align-items: center;
+}
+
+.social-link-footer__social-links {
+	display: flex;
+	gap: 10px;
+}
+
+.staff-description__social-link-content, .social-link-footer__social-link-content {
+	width: 44px;
+	height: 44px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	border-radius: 50%;
+}
+
+.social-link-footer__title {
+	color: #ffffff;
+}
+
+.social-link-footer__social-link-content {
+	color: #ffffff;
+	background-color: rgba(256, 256, 256, 0.1);
+	margin-top: 20px;
+}
+
+.social-link-footer__social-link-content:hover {
+	background-color: var(--active-fg-color);
 }
