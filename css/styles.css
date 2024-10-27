@@ -2,6 +2,7 @@
 	--fg-color: #212121;
 	--fg-color-alt: #757575;
 	--active-fg-color: #2196F3;
+	--hover-button-bg: #188ce8;
 	--font: "Roboto", sans-serif
 }
 
@@ -74,7 +75,7 @@ ul {
 }
 
 .site-navigation__link:after {
-	background-color: #ffffff;
+	background-color: transparent;
 	content: "";
 	display: block;
 	height: 4px;
@@ -156,7 +157,7 @@ footer .container {
 }
 
 .section--first__button:hover {
-	background-color: #188ce8;
+	background-color: var(--hover-button-bg);
 }
 
 .invisible-header {
@@ -185,7 +186,7 @@ footer .container {
 	border-radius: 4px;
 }
 
-.advantage__title, .social-link-footer__title {
+.advantage__title, .social-link-footer__title, .spam-footer__title {
 	font-size: 14px;
 	font-weight: 700;
 	letter-spacing: 0.03em;
@@ -519,6 +520,66 @@ footer .container {
 	color: var(--active-fg-color);
 }
 
+.social-link-and-spam-footer {
+	display: flex;
+	width: 100%;
+}
+
+.spam-footer {
+	margin-left: 94px;
+	width: 100%;
+}
+
+.spam-footer__form {
+	display: flex;
+	gap: 12px;
+}
+
+.spam-footer__title {
+	color: #ffffff;
+	margin-bottom: 20px;
+}
+
+.spam-footer__label {
+	display: none;
+}
+
+.spam-footer__input {
+	color: #ffffff;
+	background-color: transparent;
+	height: 50px;
+	padding: 15px 16px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	outline: none;
+	border-radius: 4px;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+	flex-grow: 1;
+}
+
+.spam-footer__button {
+	color: #ffffff;
+	background-color: var(--active-fg-color);
+	border-radius: 4px;
+	border: none;
+
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: 0.06em;
+	line-height: 1.87;
+
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 10px 28px;
+
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.spam-footer__button:hover {
+	background-color: var(--hover-button-bg);
+}
+
 .staff-description__social-link-content, .social-link-footer__social-link-content {
 	width: 44px;
 	height: 44px;
@@ -570,6 +631,9 @@ footer .container {
 	height: 581px;
 	border-radius: 4px;
 	padding: 8px;
+
+	display: flex;
+	flex-direction: column;
 }
 
 .modal-window__header {
@@ -590,4 +654,150 @@ footer .container {
 
 .modal-window__close-button:hover {
 	color: var(--active-fg-color);
+}
+
+.modal-window__form {
+	padding: 32px;
+	padding-top: 0px;
+
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.modal-window__title {
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 1.172;
+	letter-spacing: 0.03em;
+	text-align: center;
+
+	color: #212121;
+
+	padding: 2px;
+}
+
+.modal-window__section {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.modal-window__inputs {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.modal-window__input-item {
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.modal-window__input-item--grow {
+	flex-grow: 1;
+}
+
+.modal-window__label {
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 1.172;
+	letter-spacing: 0.01em;
+
+	color: #757575;
+
+	border: none;
+}
+
+.modal-window__input {
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 1.172;
+	letter-spacing: 0.01em;
+
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+}
+
+.modal-window__input-wrapper {
+	padding: 11px 12px;
+	border-radius: 4px;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+
+	display: flex;
+	align-items: center;
+	gap: 12px;
+
+	height: 100%;
+}
+
+.modal-window__input-wrapper:active,
+.modal-window__input-wrapper:hover {
+	border-color: var(--active-fg-color);
+	color: var(--active-fg-color);
+}
+
+.modal-window__input-icon {
+	color: inherit;
+}
+
+.modal-window__input:placeholder {
+	color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-window__input--comment {
+	resize: none;
+}
+
+.modal-window__footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+	margin-top: 20px;
+}
+
+.modal-window__checkbox {
+	margin-right: 5px;
+}
+
+.modal-window__button {
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 1.875;
+	letter-spacing: 0.06em;
+	text-align: center;
+
+	color: #ffffff;
+
+	border-radius: 4px;
+	background-color: #2169f3;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+	padding: 10px 52px;
+
+	border: none;
+}
+
+.modal-window__button:hover {
+	background-color: #188ce8;
+}
+
+.modal-window__checkbox-label {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.714;
+	letter-spacing: 0.03em;
+
+	color: var(--fg-color-alt);
+}
+
+.modal-window__link {
+	color: var(--active-fg-color);
+	text-decoration: underline;
 }
