@@ -17,23 +17,27 @@
 				<a class="logo-link" href="."><img class="logo-image" src="images/WebStudio.svg" alt="WebStudio"></a>
 				<nav class="site-navigation">
 					<ul class="site-navigation__links">
-						<li class="site-navigation__link-item site-navigation__link-active-item"> <a class="site-navigation__link" href=".">Студія</a></li>
+						<li class="site-navigation__link-item"> <a class="site-navigation__link site-navigation__link--active" href=".">Студія</a></li>
 						<li class="site-navigation__link-item"> <a class="site-navigation__link" href="portfolio.html">Портфоліо</a></li>
 						<li class="site-navigation__link-item"> <a class="site-navigation__link" href="contact">Контакти</a></li>
 					</ul>
 				</nav>
 				<ul class="contacts">
 					<li class="contact">
-						<svg class="contact__icon" width=16 height=13>
-							<use href="images/icons.svg#icon-envelope"></use>
-						</svg>
-						<a class="contact__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+						<a class="contact__mail" href="mailto:info@devstudio.com">
+							<svg class="contact__icon" width=16 height=13>
+								<use href="images/icons.svg#icon-envelope"></use>
+							</svg>
+							info@devstudio.com
+						</a>
 					</li>
 					<li class="contact">
-						<svg class="contact__icon" width=10 height=17>
-							<use href="images/icons.svg#icon-smartphone"></use>
-						</svg>
-						<a class="contact__phone-number" href="tel:+380961111111">+38 096 111 11 11</a>
+						<a class="contact__phone-number" href="tel:+380961111111">
+							<svg class="contact__icon" width=10 height=17>
+								<use href="images/icons.svg#icon-smartphone"></use>
+							</svg>
+							+38 096 111 11 11
+						</a>
 					</li>
 				</ul>
 			</div>
@@ -49,6 +53,64 @@
 							</svg>
 						</button>
 					</div>
+					<form class="modal-window__form">
+						<section class="modal-window__section">
+							<h2 class="modal-window__title">Залиште свої дані, ми вам передзвонимо</h2>
+							<ul class="modal-window__inputs">
+								<li class="modal-window__input-item">
+									<label class="modal-window__label modal-window__label--name" name="name">
+										Ім'я
+									</label>
+									<div class="modal-window__input-wrapper">
+										<svg class="modal-window__input-icon" width=18 height=18>
+											<use href="images/icons.svg#icon-person-modal"></use>
+										</svg>
+										<input class="modal-window__input modal-window__input--name" name="name">
+									</div>
+								</li>
+								<li class="modal-window__input-item">
+									<label class="modal-window__label modal-window__label--phone-number" name="phone-number">
+										Телефон
+									</label>
+									<div class="modal-window__input-wrapper">
+										<svg class="modal-window__input-icon" width=18 height=18>
+											<use href="images/icons.svg#icon-phone-modal"></use>
+										</svg>
+										<input class="modal-window__input modal-window__input--phone-number" type="tel" name="phone-number">
+									</div>
+								</li>
+								<li class="modal-window__input-item">
+									<label class="modal-window__label modal-window__label--email" name="email">
+										Пошта
+									</label>
+									<div class="modal-window__input-wrapper">
+										<svg class="modal-window__input-icon" width=18 height=18>
+											<use href="images/icons.svg#icon-email-modal"></use>
+										</svg>
+										<input class="modal-window__input modal-window__input--email" type="email" name="email">
+									</div>
+								</li>
+								<li class="modal-window__input-item modal-window__input-item--grow">
+									<label class="modal-window__label modal-window__label--comment" name="comment">
+										Коментар
+									</label>
+									<div class="modal-window__input-wrapper">
+										<textarea class="modal-window__input modal-window__input--comment" name="comment" placeholder="Введіть текст"></textarea>
+									</div>
+								</li>
+							</ul>
+						</section>
+						<div class="modal-window__footer">
+							<div class="modal-window__checkbox-container">
+								<label class="modal-window__checkbox-label" name="modal-checkbox">
+									<input class="modal-window__checkbox" type="checkbox" name="modal-checkbox">
+									<span class="modal-window__checkmark"></span>
+									Погоджуюся з розсилкою та приймаю <a class="modal-window__link" href="">Умови договору</a>
+								</label>
+							</div>
+							<button class="modal-window__button" type="submit">Відправити</button>
+						</div>
+					</form>
 				</div>
 			</div>
 			<section class="section--first">
@@ -363,42 +425,58 @@
 						<a class="info__phone-number" href="tel:+380961111111">+38 096 111 11 11</a>
 					</address>
 				</section>
-				<section class="social-link-footer">
-					<h2 class="social-link-footer__title">ПРИЄДНУЙТЕСЬ</h2>
-					<ul class="social-link-footer__social-links">
-						<li class="social-link-footer__social-link">
-							<a class="social-link-footer__social-link-content" href="https://instagram.com">
-								<svg class="social-link-footer__social-link-icon" width=20 height=20>
-									<use href="images/icons.svg#icon-instagram">
+				<div class="social-link-and-spam-footer">
+					<section class="social-link-footer">
+						<h2 class="social-link-footer__title">ПРИЄДНУЙТЕСЬ</h2>
+						<ul class="social-link-footer__social-links">
+							<li class="social-link-footer__social-link">
+								<a class="social-link-footer__social-link-content" href="https://instagram.com">
+									<svg class="social-link-footer__social-link-icon" width=20 height=20>
+										<use href="images/icons.svg#icon-instagram">
+										</use>
+									</svg>
+								</a>
+							</li>
+							<li class="social-link-footer__social-link">
+								<a class="social-link-footer__social-link-content" href="https://twitter.com">
+									<svg class="social-link-footer__social-link-icon" width=20 height=20>
+										<use href="images/icons.svg#icon-twitter">
+										</use>
+									</svg>
+								</a>
+							</li>
+							<li class="social-link-footer__social-link">
+								<a class="social-link-footer__social-link-content" href="https://facebook.com">
+									<svg class="social-link-footer__social-link-icon" width=20 height=20>
+										<use href="images/icons.svg#icon-facebook">
+										</use>
+									</svg>
+								</a>
+							</li>
+							<li class="social-link-footer__social-link">
+								<a class="social-link-footer__social-link-content" href="https://linkedin.com">
+									<svg class="social-link-footer__social-link-icon" width=20 height=20>
+										<use href="images/icons.svg#icon-linkedin">
+										</use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</section>
+					<div class="spam-footer">
+						<h2 class="spam-footer__title">Підпишіться на розсилку</h2>
+						<form class="spam-footer__form">
+							<label class="spam-footer__label" name="spam">Підпишіться на розсилку</label>
+							<input class="spam-footer__input" name="spam" type="email" placeholder="E-mail">
+							<button class="spam-footer__button" type="submit">
+								Підписатися
+								<svg class="spam-footer__button-icon" width=24 height=25>
+									<use href="images/icons.svg#icon-send">
 									</use>
 								</svg>
-							</a>
-						</li>
-						<li class="social-link-footer__social-link">
-							<a class="social-link-footer__social-link-content" href="https://twitter.com">
-								<svg class="social-link-footer__social-link-icon" width=20 height=20>
-									<use href="images/icons.svg#icon-twitter">
-									</use>
-								</svg>
-							</a>
-						</li>
-						<li class="social-link-footer__social-link">
-							<a class="social-link-footer__social-link-content" href="https://facebook.com">
-								<svg class="social-link-footer__social-link-icon" width=20 height=20>
-									<use href="images/icons.svg#icon-facebook">
-									</use>
-								</svg>
-							</a>
-						</li>
-						<li class="social-link-footer__social-link">
-							<a class="social-link-footer__social-link-content" href="https://linkedin.com">
-								<svg class="social-link-footer__social-link-icon" width=20 height=20>
-									<use href="images/icons.svg#icon-linkedin">
-									</use>
-								</svg>
-							</a>
-						</li>
-					</ul>
+							</button>
+						</form>
+					</div>
 				</div>
 			</div>
 		</footer>
