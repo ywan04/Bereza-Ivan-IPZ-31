@@ -733,6 +733,8 @@ footer .container {
 	gap: 12px;
 
 	height: 100%;
+
+	cursor: pointer;
 }
 
 .modal-window__input-wrapper:active,
@@ -788,6 +790,57 @@ footer .container {
 	background-color: #188ce8;
 }
 
+.modal-window__checkbox-container {
+	display: block;
+	justify-content: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.modal-window__checkbox {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+.modal-window__checkmark {
+	display: inline-block;
+	width: 16px;
+	height: 15px;
+	border: 2px solid var(--fg-color);
+	border-radius: 2px;
+}
+
+.modal-window__checkbox:checked ~ .modal-window__checkmark {
+	background-color: var(--active-fg-color);
+	border-color: var(--active-fg-color);
+}
+
+.modal-window__checkmark:after {
+	content: "";
+	position: relative;
+	display: none;
+	left: 3px;
+	top: 0px;
+	width: 5px;
+	height: 9px;
+	border: solid white;
+	border-width: 0 2px 2px 0;
+	border-color: #ffffff;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.modal-window__checkbox:checked ~ .modal-window__checkmark:after {
+	display: block;
+}
+
 .modal-window__checkbox-label {
 	font-size: 14px;
 	font-weight: 400;
@@ -795,6 +848,12 @@ footer .container {
 	letter-spacing: 0.03em;
 
 	color: var(--fg-color-alt);
+
+	cursor: pointer;
+
+	display: flex;
+	align-items: center;
+	gap: 7px;
 }
 
 .modal-window__link {
