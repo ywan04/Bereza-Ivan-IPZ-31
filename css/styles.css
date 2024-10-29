@@ -186,6 +186,10 @@ footer .container {
 	border-radius: 4px;
 }
 
+.about-footer {
+	flex-shrink: 0;
+}
+
 .advantage__title, .social-link-footer__title, .spam-footer__title {
 	font-size: 14px;
 	font-weight: 700;
