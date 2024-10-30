@@ -1,0 +1,258 @@
+.is-hidden {
+	visibility: hidden;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.modal-backdrop {
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.2);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-window {
+	background-color: #ffffff;
+	width: 528px;
+	height: 581px;
+	border-radius: 4px;
+	padding: 8px;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.modal-window__header {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.modal-window__close-button {
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #ffffff;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+
+	&:hover {
+		color: $active-fg-color;
+	}
+}
+
+.modal-window__form {
+	padding: 32px;
+	padding-top: 0px;
+
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.modal-window__title {
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 1.172;
+	letter-spacing: 0.03em;
+	text-align: center;
+
+	color: #212121;
+
+	padding: 2px;
+}
+
+.modal-window__section {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.modal-window__inputs {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.modal-window__input-item {
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.modal-window__input-item--grow {
+	flex-grow: 1;
+}
+
+.modal-window__label {
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 1.172;
+	letter-spacing: 0.01em;
+
+	color: #757575;
+
+	border: none;
+}
+
+.modal-window__input {
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 1.172;
+	letter-spacing: 0.01em;
+
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+}
+
+.modal-window__input-wrapper {
+	padding: 11px 12px;
+	border-radius: 4px;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+
+	display: flex;
+	align-items: center;
+	gap: 12px;
+
+	height: 100%;
+
+	cursor: pointer;
+
+	&:active, &:hover {
+		border-color: $active-fg-color;
+		color: $active-fg-color;
+	}
+}
+
+.modal-window__input-icon {
+	color: inherit;
+}
+
+.modal-window__input {
+	&:placeholder {
+		color: rgba(117, 117, 117, 0.5);
+	}
+}
+
+.modal-window__input--comment {
+	resize: none;
+}
+
+.modal-window__footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+	margin-top: 20px;
+}
+
+.modal-window__checkbox {
+	margin-right: 5px;
+}
+
+.modal-window__button {
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 1.875;
+	letter-spacing: 0.06em;
+	text-align: center;
+
+	color: #ffffff;
+
+	border-radius: 4px;
+	background-color: #2169f3;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+	padding: 10px 52px;
+
+	border: none;
+}
+
+.modal-window__button {
+	&:hover {
+		background-color: #188ce8;
+	}
+}
+
+.modal-window__checkbox-container {
+	display: block;
+	justify-content: center;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.modal-window__checkbox {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+.modal-window__checkmark {
+	display: inline-block;
+	width: 16px;
+	height: 15px;
+	border: 2px solid $fg-color;
+	border-radius: 2px;
+
+	&:after {
+		content: "";
+		position: relative;
+		display: none;
+		left: 3px;
+		top: 0px;
+		width: 5px;
+		height: 9px;
+		border: solid white;
+		border-width: 0 2px 2px 0;
+		border-color: #ffffff;
+		-webkit-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+}
+
+.modal-window__checkbox:checked ~ .modal-window__checkmark {
+	background-color: $active-fg-color;
+	border-color: $active-fg-color;
+}
+
+.modal-window__checkbox:checked ~ .modal-window__checkmark:after {
+	display: block;
+}
+
+.modal-window__checkbox-label {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.714;
+	letter-spacing: 0.03em;
+
+	color: $fg-color-alt;
+
+	cursor: pointer;
+
+	display: flex;
+	align-items: center;
+	gap: 7px;
+}
+
+.modal-window__link {
+	color: $active-fg-color;
+	text-decoration: underline;
+}
