@@ -1,0 +1,58 @@
+.site-navigation__link
+{
+	&:hover, &:focus, &:active, &--active {
+		color: $active-fg-color;
+	}
+	&:after {
+		background-color: transparent;
+		content: "";
+		display: block;
+		height: 4px;
+		border-radius: 2px;
+		width: 100%;
+		position: relative;
+		top: 31px;
+	}
+	&--active:after {
+		background-color: $active-fg-color;
+	}
+	&--active {
+		color: $active-fg-color;
+	}
+	&:hover::after {
+		background-color: $active-fg-color;
+		transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	}
+}
+
+.contact__mail, .contact__phone-number, .contact__icon {
+	color: inherit;
+}
+
+.logo-link {
+	margin-right: 93px;
+}
+
+.site-navigation__links {
+	display: flex;
+	gap: 30px;
+}
+
+.contacts {
+	display: flex;
+	gap: 40px;
+
+	margin-left: auto;
+}
+
+.contact {
+	a {
+		color: $fg-color-alt;
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+	a:hover {
+		color: $active-fg-color;
+	}
+}
