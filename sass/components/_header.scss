@@ -75,7 +75,112 @@
 	background: #ffffff;
 	padding: 0;
 	margin-left: auto;
+
 	@media screen and (max-width: 480px) {
 		display: block;
 	}
+
+	&:hover {
+		color: $active-fg-color;
+	}
+}
+
+.burger-menu {
+	background-color: #ffffff;
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	padding-top: 20px;
+	padding-bottom: 48px;
+	padding-left: 40px;
+	padding-right: 25px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.burger-menu__header {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.burger-menu__close {
+	background: transparent;
+	border: none;
+	outline: none;
+
+	&:hover {
+		color: $active-fg-color;
+	}
+}
+
+.burger-menu__navigation-items {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+
+.burger-menu__navigation-link {
+	color: $fg-color;
+	font-size: 40px;
+	font-weight: 500;
+	line-height: 1.172;
+	letter-spacing: 0.02em;
+
+	&:hover {
+		color: $active-fg-color;
+	}
+}
+
+.burger-menu__bottom {
+	display: flex;
+	flex-direction: column;
+	gap: 64px;
+}
+
+.burger-menu__contacts {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+
+.burger-menu__contact-phone {
+	color: $active-fg-color;
+	font-size: 34px;
+	font-weight: 500;
+	line-height: 1.172;
+	letter-spacing: 0.02em;
+}
+
+.burger-menu__contact-mail {
+	color: $fg-color-alt;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 1.172;
+	letter-spacing: 0.02em;
+}
+
+.burger-menu__social-links {
+	display: flex;
+	gap: 10px;
+}
+
+.burger-menu__social-links-item {
+	display: contents;
+
+	&+&:before {
+		color: $fg-color-alt;
+		content: '|';
+	}
+}
+
+.burger-menu__social-link {
+	color: $active-fg-color;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.22;
+	letter-spacing: 0.02em;
 }
