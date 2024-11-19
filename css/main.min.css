@@ -862,6 +862,12 @@ footer .container {
   align-items: center;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 480px) {
+  .modal-backdrop {
+    display: block;
+    padding: 93px 15px;
+  }
+}
 
 .modal-window {
   background-color: #ffffff;
@@ -871,6 +877,12 @@ footer .container {
   padding: 8px;
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  .modal-window {
+    max-width: 450px;
+    max-height: 609px;
+  }
 }
 
 .modal-window__header {
@@ -1070,6 +1082,11 @@ footer .container {
   display: flex;
   align-items: center;
   gap: 7px;
+}
+@media screen and (max-width: 768px) {
+  .modal-window__checkbox-label {
+    font-size: 12px;
+  }
 }
 
 .modal-window__link {
