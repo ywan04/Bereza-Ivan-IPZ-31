@@ -739,6 +739,20 @@ footer .container {
   gap: 8px;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 768px) {
+  .filter-buttons {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .filter-buttons {
+    padding-bottom: 40px;
+    justify-content: left;
+    row-gap: 15px;
+  }
 }
 
 .filter-button__button {
@@ -761,6 +775,11 @@ footer .container {
   justify-content: center;
   flex-wrap: wrap;
 }
+@media screen and (max-width: 768px) {
+  .cards {
+    padding-bottom: 60px;
+  }
+}
 
 .card-description {
   padding: 20px 24px;
@@ -774,6 +793,7 @@ footer .container {
 
 .card {
   width: 370px;
+  border: 1px solid #eeeeee;
 }
 .card:hover {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.1607843137), 0px 4px 4px 0px rgba(0, 0, 0, 0.0588235294), 0px 1px 1px 0px rgba(0, 0, 0, 0.1215686275);
@@ -781,11 +801,20 @@ footer .container {
 .card:hover .card-content__overlay {
   transform: translateY(0);
 }
+@media screen and (max-width: 768px) {
+  .card {
+    width: 47%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .card {
+    width: 100%;
+  }
+}
 
 .card-content {
   background-color: #ffffff;
   margin: 0px;
-  border: 1px solid #eeeeee;
   position: relative;
 }
 
