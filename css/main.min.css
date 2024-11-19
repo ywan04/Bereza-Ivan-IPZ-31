@@ -188,7 +188,7 @@ footer .container {
 
 .spam-footer {
   flex-grow: 1;
-  margin-left: 94px;
+  margin-left: 24px;
 }
 @media screen and (max-width: 768px) {
   .spam-footer {
