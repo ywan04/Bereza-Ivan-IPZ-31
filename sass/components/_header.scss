@@ -36,6 +36,9 @@
 .site-navigation__links {
 	display: flex;
 	gap: 30px;
+	@media screen and (max-width: 480px) {
+		display: none;
+	}
 }
 
 .contacts {
@@ -43,6 +46,14 @@
 	gap: 40px;
 
 	margin-left: auto;
+
+	@media screen and (max-width: 480px) {
+		display: none;
+	}
+	@media screen and (max-width: 768px) {
+		flex-direction: column;
+		gap: 10px;
+	}
 }
 
 .contact {

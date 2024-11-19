@@ -92,11 +92,27 @@ ul {
   display: flex;
   gap: 30px;
 }
+@media screen and (max-width: 480px) {
+  .site-navigation__links {
+    display: none;
+  }
+}
 
 .contacts {
   display: flex;
   gap: 40px;
   margin-left: auto;
+}
+@media screen and (max-width: 480px) {
+  .contacts {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contacts {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
 .contact a {
