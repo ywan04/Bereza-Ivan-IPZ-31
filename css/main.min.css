@@ -125,6 +125,20 @@ ul {
   color: #2196F3;
 }
 
+.burger {
+  display: none;
+  border: none;
+  outline: none;
+  background: #ffffff;
+  padding: 0;
+  margin-left: auto;
+}
+@media screen and (max-width: 480px) {
+  .burger {
+    display: block;
+  }
+}
+
 footer {
   background-color: #2f303a;
 }
