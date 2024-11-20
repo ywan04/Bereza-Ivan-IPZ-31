@@ -24,6 +24,10 @@
 	text-transform: uppercase;
 
 	width: 696px;
+
+	@media screen and (max-width: 768px) {
+		font-size: 26px;
+	}
 }
 
 .section--first__button {
@@ -52,17 +56,32 @@
 	.container {
 		padding-top: 94px;
 		padding-bottom: 94px;
+		@media screen and (max-width: 768px) {
+			padding-top: 60px;
+			padding-bottom: 60px;
+		}	
 	}
 }
 
 .section--second__advantages {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	gap: 30px;
 }
 
 .advantage {
 	width: 270px;
+
+	@media screen and (max-width: 768px) {
+		width: 47%;
+	}
+	@media screen and (max-width: 480px) {
+		width: 100%;
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+	}
 }
 
 .advantage__icon-panel {
@@ -70,6 +89,12 @@
 	background-color: #f5f4fa;
 	margin-bottom: 30px;
 	border-radius: 4px;
+
+	@media screen and (max-width: 768px) {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
 }
 
 .about-footer {
@@ -97,6 +122,9 @@
 .section--third {
 	.container {
 		padding-bottom: 94px;
+	}
+	@media screen and (max-width: 768px) {
+		display: none;
 	}
 }
 
@@ -151,10 +179,17 @@
 .section--fourth .container {
 	padding-top: 94px;
 	padding-bottom: 94px;
+	@media screen and (max-width: 768px) {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
 }
 
 .section--fourth__title {
 	margin-bottom: 50px;
+	@media screen and (max-width: 768px) {
+		margin-bottom: 30px;
+	}
 }
 
 .staff-cards {
@@ -162,12 +197,29 @@
 
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.staff-card {
+	@media screen and (max-width: 768px) {
+		width: 47%;
+	}
+	@media screen and (max-width: 480px) {
+		width: 100%;
+	}
 }
 
 .staff-card-content {
 	margin: 0px;
 	background-color: #ffffff;
 	box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001f;
+}
+
+.staff-card-content__image {
+	@media screen and (max-width: 768px) {
+		width: 100%;
+		height: 100%;
+	}
 }
 
 .staff-description {
@@ -223,6 +275,10 @@
 .section--fifth {
 	padding-top: 94px;
 	padding-bottom: 94px;
+	@media screen and (max-width: 768px) {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
 }
 
 .clients {
@@ -230,6 +286,11 @@
 	gap: 30px;
 
 	margin-top: 50px;
+
+	@media screen and (max-width: 768px) {
+		flex-wrap: wrap;
+		margin-top: 30px;
+	}
 }
 
 .client {
@@ -240,5 +301,14 @@
 
 	&:hover {
 		color: $active-fg-color;
+	}
+
+	@media screen and (max-width: 768px) {
+		width: 30%;
+		display: flex;
+		justify-content: center;
+	}
+	@media screen and (max-width: 480px) {
+		width: 46%;
 	}
 }

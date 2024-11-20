@@ -4,6 +4,17 @@
 	gap: 8px;
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
+
+	@media screen and (max-width: 768px) {
+		padding-top: 60px;
+		padding-bottom: 30px;
+	}
+	@media screen and (max-width: 480px) {
+		padding-bottom: 40px;
+		justify-content: left;
+		row-gap: 15px;
+	}
 }
 
 .filter-button__button {
@@ -26,6 +37,10 @@
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
+
+	@media screen and (max-width: 768px) {
+		padding-bottom: 60px;
+	}
 }
 
 .card-description {
@@ -43,6 +58,7 @@
 
 .card {
 	width: 370px;
+	border: 1px solid #eeeeee;
 
 	&:hover {
 		box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000f, 0px 1px 1px 0px #0000001f;
@@ -50,12 +66,19 @@
 			transform: translateY(0);
 		}
 	}
+
+	@media screen and (max-width: 768px) {
+		width: 47%;
+	}
+
+	@media screen and (max-width: 480px) {
+		width: 100%;
+	}
 }
 
 .card-content {
 	background-color: #ffffff;
 	margin: 0px;
-	border: 1px solid #eeeeee;
 	position: relative;
 }
 
